@@ -1,0 +1,40 @@
+{
+  "name": "logger",
+  "version": "0.0.0",
+  "description": "Simple loggin utility",
+  "main": "bundle.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "rollup": "rollup -c",
+    "karma": "karma",
+    "build": "npm run rollup",
+    "pretest": "npm run build",
+    "test": "karma start"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "mioush",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.16.1",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-sinon-chai": "^1.2.4",
+    "lolex": "^1.6.0",
+    "mocha": "^3.2.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
